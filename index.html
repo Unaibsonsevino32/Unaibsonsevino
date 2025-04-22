@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,401&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto-Conversor-DevC</title>
+  </head>
+
+  <body>
+    <img class="logo" src="./assets/logo.gif" alt="logo-conversor-DevClub" />
+
+    <div>
+      <label>
+        Converte <b>de</b>
+
+        <select>
+          <option>R$ Real Brasileiro</option>
+        </select>
+      </label>
+
+      <label>
+        Converte <b>para</b>
+
+        <select class="currency-select">
+          <option value="dolar">US$ Dólar americano</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ libra</option>
+          <option value="bitcoin">Bitcoin</option>
+        </select>
+      </label>
+
+      <label>
+        Valor
+        <input class="input-currency" placeholder="R$ 10.000,00" />
+      </label>
+
+      <button class="convert-button">Converter</button>
+      <section>
+        <div class="Real">
+          <img src="./assets/REAL.png" alt="logo-moeda-a-Converter" />
+          <p class="moeda">Real</p>
+          <p class="valor-moeda-para-converter">R$ 0.0</p>
+        </div>
+            
+
+        <img class="SETA" src="./assets/SETA.png" alt="logo-seta" />
+
+        <div class="USD">
+          <img class="currency-img" src="./assets/USD.png" alt="logo-moeda-convertida" />
+          <p class="moeda" id="currency-name">Dolar Americano</p>
+          <p class="valor-moeda">US$ 0.0</p>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  
+</html>
